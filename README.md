@@ -53,4 +53,15 @@ KeyWords
        LIMIT 20
        OFFSET 40;
 
-10) 
+ORDER BY
+---------
+        The ORDER BY clause in SQL is used to sort the result set by one or more columns. By default, it sort in ascending order (ASC), but you can specify descending order (DESC) if needed.
+
+
+10) How do you list the top 10 most recent movies by year showing name, rankscore, and year?
+--------------------------------------------------------------------------------------------
+        SELECT name, rankscore,year 
+        FROM movies
+        ORDER BY year DESC
+        LIMIT 10;
+        
